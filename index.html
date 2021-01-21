@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="row g-3">
+    <div class="col-5">
+        <input id="user" type="text" class="form-control" placeholder="User" aria-label="User">
+    </div>
+    <div class="col-5">
+        <input id="pass" type="text" class="form-control" placeholder="Password" aria-label="Password">
+    </div>
+    <div class="col-2">
+        <button id="submit" type="submit" class="btn btn-primary">Log In</button>
+    </div>
+    
+</div>
+
+<div id="container-data" class="container">
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Appelido</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+        </tbody>
+    </table>
+</div>
+
+<div>
+        <form>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="surname" placeholder="Surname">
+        <input type="email" id="email" placeholder="Email Address">
+        <button id="submit2" type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
