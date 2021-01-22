@@ -1,8 +1,8 @@
 const express = require('express');
 const server = express();
 var cors = require('cors');
-server.use(express.json());
 server.use(cors());
+server.use(express.json());
 
 
 server.listen(3000, function () {
@@ -17,7 +17,7 @@ server.post('/users/', validarMail, function (req,res){
         /* id: req.body.id, */
         nombre:req.body.nombre, 
         apellido:req.body.apellido, 
-        correo: req.body.correo.toLowerCase(),
+        correo: req.body.correo/* .toLowerCase() */,
     });
     res.status(200).json('Usuario creado exitosamente');
 });

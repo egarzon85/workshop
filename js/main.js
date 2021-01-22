@@ -50,12 +50,15 @@ const data = {
   "correo": correo
 };
 
+console.log(data)
+
 fetch(URL, {
   method: "POST",
-  body: data,
   headers: {
-    "Content-type": "application/json; charset=UTF-8"
-  }
+    "Content-type": "application/json"
+  },
+  mode: 'cors',
+  body: JSON.stringify(data),
 })
 });
 
